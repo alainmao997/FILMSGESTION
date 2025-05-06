@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.btnValiderDebut = new System.Windows.Forms.Button();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.rbnAbonne = new System.Windows.Forms.RadioButton();
+            this.rbnPasAbonne = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // btnValiderDebut
@@ -43,39 +43,40 @@
             this.btnValiderDebut.TabIndex = 0;
             this.btnValiderDebut.Text = "VALIDER";
             this.btnValiderDebut.UseVisualStyleBackColor = false;
+            this.btnValiderDebut.Click += new System.EventHandler(this.btnValiderDebut_Click);
             // 
-            // radioButton1
+            // rbnAbonne
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.radioButton1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.radioButton1.Location = new System.Drawing.Point(200, 121);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(116, 30);
-            this.radioButton1.TabIndex = 1;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Abonné";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rbnAbonne.AutoSize = true;
+            this.rbnAbonne.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.rbnAbonne.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.rbnAbonne.Location = new System.Drawing.Point(200, 121);
+            this.rbnAbonne.Name = "rbnAbonne";
+            this.rbnAbonne.Size = new System.Drawing.Size(116, 30);
+            this.rbnAbonne.TabIndex = 1;
+            this.rbnAbonne.TabStop = true;
+            this.rbnAbonne.Text = "Abonné";
+            this.rbnAbonne.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // rbnPasAbonne
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.radioButton2.Location = new System.Drawing.Point(385, 121);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(157, 30);
-            this.radioButton2.TabIndex = 2;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Pas Abonné";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rbnPasAbonne.AutoSize = true;
+            this.rbnPasAbonne.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.rbnPasAbonne.Location = new System.Drawing.Point(385, 121);
+            this.rbnPasAbonne.Name = "rbnPasAbonne";
+            this.rbnPasAbonne.Size = new System.Drawing.Size(157, 30);
+            this.rbnPasAbonne.TabIndex = 2;
+            this.rbnPasAbonne.TabStop = true;
+            this.rbnPasAbonne.Text = "Pas Abonné";
+            this.rbnPasAbonne.UseVisualStyleBackColor = true;
             // 
             // frmDebut
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.rbnPasAbonne);
+            this.Controls.Add(this.rbnAbonne);
             this.Controls.Add(this.btnValiderDebut);
             this.Name = "frmDebut";
             this.Text = "GESTION DES FILMS";
@@ -87,7 +88,7 @@
         #endregion
 
         private Button btnValiderDebut;
-        private RadioButton radioButton1;
-        private RadioButton radioButton2;
+        private RadioButton rbnAbonne;
+        private RadioButton rbnPasAbonne;
     }
 }
