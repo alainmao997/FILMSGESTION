@@ -1,8 +1,8 @@
 namespace GestionFilms
 {
-    public partial class Form1 : Form
+    public partial class frmDebut : Form
     {
-        public Form1()
+        public frmDebut()
         {
             InitializeComponent();
         }
