@@ -1,4 +1,4 @@
-# Fichiers et dossiers spécifiques à Visual Studio
+# Fichiers et dossiers spécifiques à Visual Studio et extension à ne pas prendre en compte
 .vs/
 .vscode/
 *_i.c
