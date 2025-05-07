@@ -15,11 +15,14 @@ namespace GestionFilms
                 this.Hide();
                 formulaireConnexion.Show();
 
-
             }
 
             else if (rbnPasAbonne.Checked)
-                MessageBox.Show("Formulaire d'abonnement");
+            {
+                FrmInscription formulaireInscription = new();
+                this.Hide();
+                formulaireInscription.Show();
+            }
             else
                 MessageBox.Show("Ëtes vous client ou pas ? Faites votre choix");
         }
