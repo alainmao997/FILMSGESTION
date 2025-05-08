@@ -6,11 +6,27 @@ using System.Threading.Tasks;
 
 namespace GestionFilms.Modeles
 {
-    public class Clients:Personnes
+    public class Client:Personne
     {
         private DateTime _dateInscription;
         private string? _courriel;
         private string? _password;
+
+        /// <summary>
+        /// Constructeur par defaut de Clients
+        /// </summary>
+        public Client()
+        {
+
+        }
+        /// <summary>
+        /// Constructeur de Clients recevant nom et prenom
+        /// </summary>
+        /// <param name="pNom"></param>
+        /// <param name="pPrenom"></param>
+        public Client(string pNom, string pPrenom) : base(pNom, pPrenom)
+        {
+        }
 
         public DateTime DateInscription {  get { return _dateInscription; } set { _dateInscription = value; } }
         
