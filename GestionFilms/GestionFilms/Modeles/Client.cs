@@ -11,13 +11,14 @@ namespace GestionFilms.Modeles
         private DateTime _dateInscription;
         private string? _courriel;
         private string? _password;
+        private CarteCredit _carteCredit;
 
         /// <summary>
         /// Constructeur par defaut de Clients
         /// </summary>
         public Client()
         {
-
+            _carteCredit = new CarteCredit();
         }
         /// <summary>
         /// Constructeur de Clients recevant nom et prenom
@@ -26,6 +27,7 @@ namespace GestionFilms.Modeles
         /// <param name="pPrenom"></param>
         public Client(string pNom, string pPrenom) : base(pNom, pPrenom)
         {
+            _carteCredit = new CarteCredit();
         }
 
         public DateTime DateInscription {  get { return _dateInscription; } set { _dateInscription = value; } }
@@ -57,6 +59,18 @@ namespace GestionFilms.Modeles
             { 
                 _password = value; 
             } 
+        }
+
+        public CarteCredit CarteCredit 
+        { 
+            get 
+            { 
+                return _carteCredit; 
+            } 
+            set 
+            { 
+                _carteCredit = value; 
+            }
         }
     }
 }
